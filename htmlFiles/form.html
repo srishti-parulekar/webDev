@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--form attributes:
+    action attribute specifies which backend file is connected to this form
+    the information that is filled in this form is then processes in that file.
+
+    method attribute specifies whether the information is sensitive or not
+    if this attribute is set to GET then the data is insensitive that is security not a priority
+    if it is set to POST then the information is sensitive and should be protected. eg: for login pages
+
+    the input tag is for textboxes by default and its type is set to text as shown
+    if we set its type to submit then the button will do the submit action.
+    if we set the type to reset then the button will do reset action
+    the label tag is for labelling
+    if we set the attribute required of the text field that is the input tag then it wont proceed unless filled
+
+    if we want it so that when we click on the label the cursor automatically moves 
+    to the text field we can set the for attribute of the label to a value
+    and then we can set the id attribute of the input tag to the same value.
+
+    we can set max and minimum length to characters using minlength attribute of input tag
+    -->
+    <form action="index.py" method="POST" enctype="multipart/form-data">
+        <label for="username">enter username:</label>
+        <input type="text" id="username" placeholder="chocolate" minlength="6" maxlength="15" required>
+        <br>
+
+        <label for="password">enter password:</label>
+        <input type="password" placeholder="password" id="password" minlength="6" maxlength="15">
+        <br>
+
+        <label for="email">enter email:</label>
+        <input type="email" id="email" placeholder="xyz@gmail.com" minlength="6" maxlength="30">
+        <br>
+
+        <label for="phone">enter phone number:</label>
+        <!-- for phone numbers the input type is tel -->
+        <input type="tel" id="phone" placeholder="xxxxxxxxxx" pattern="[1-9]{1}[0-9]{9}">
+        <br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday">
+        <br>
+
+        <!-- using the type number adds the option of click on +1 and -1
+        value is going to be a fixed default value that can be increased or decreased -->
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+        <br>
+
+        <!--radio buttons:-->
+        <!--
+            in radio buttons we should only be able to select one out of all the options
+            this will happen if there is a name attribute in all radio button input tags 
+            and the value of this name attribute is set to the same value in all inputs.
+        -->
+        <label for="title">Title:</label>
+
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Mr.">Mr.</label>
+
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Ms.">Ms.</label>
+
+        <input type="radio" id="PhD." value="PhD." name="title">
+        <label for="Phd.">Phd.</label>
+        
+        <!--
+            Drop down menus:
+            we need a select tag.
+        -->
+        <label for="payment">payment:</label>
+        <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="giftcard">Giftcard</option>
+        </select>
+        <br>
+
+        <!-- check box:-->
+        <label for="subscribe">Subscribe</label> 
+        <input type="checkbox" id="subscribe"><br>
+        
+        <!-- for text area:-->
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <!--by default this will accept any file;
+        if we want to accept only a specific type of file 
+        we can use the accept attribute in input tag
+        -->
+        <label for="file">choose a file:</label>
+        <input type="file" id="file" accept="image/png, image/jpg"><br>
+
+        <!-- 
+            if we have to send a large file or a large amount of data we need 
+            to add an enctype attribute in our form tag and set it to multipart/form-data
+            here multipart states that the data will be broken into multiple parts
+            and when that data is received it will be reassembled into data  
+        -->
+
+        <input type="reset">
+        <br>
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first website</title>
+    </head>
+    <body>
+        <a href="button.html">
+            <button style="background-color:antiquewhite; color:black; font:50px; border-radius:25px;">learn how to use buttons</button>
+        </a>
+        <p>This is like some random ass song by Correle Carna or someone</p>
+        <audio controls autoplay muted loop>
+            <!-- we can specify the type name and upload two files
+            incase the webpage doesnt support our default type-->
+            <source src="../images/Correle Carna - Cumbia Deli.mp3" type ="audio/mp3">
+            <source src="../images/Correle Carna - Cumbia Deli.wav" type ="audio/wav">
+        </audio>
+
+        <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw"
+        target="_blank"
+        title="goes to brocode">
+            Learn html!</a>
+
+        <br>
+
+        <a href="lyrics.html"
+        target="_blank">
+            See my favourite lyrics here!</a>
+        
+        <br>
+
+        <!-- if we want to link such that the user can email us:-->
+
+        <a href="mailto:srishtiparulekar430@gmail.com">
+            Email us here!
+        </a>
+
+
+        <!-- img is a self closing tag. src is the link to the image in the same
+        folder while alt is the text that is read if the browser is in reading mode.
+        it is also displayed. we can set the dimensions of the image using height="" 
+        and width="" attributes
+        we can also have the image store a hyperlink by enclosing the img tag
+        with a tags and using an href-->
+        <a href="https://in.pinterest.com/pin/12807180186001297/">
+        <img src="../images/meFR.png"
+        alt="this cute mouse is me in finals season"
+        height="300"
+        width="300">
+        </a>
+        <h4>me in finals szn fr</h4>
+
+        <img src="../images/cutuCat.GIF"
+        alt ="this is a cutu confused cat"
+        height="300"
+        width="300">
+
+        <h4>eepy cat</h4>
+
+        <h1>This is an h1 heading</h1>
+        <hr>
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <br>
+        <h4>This is an h4 heading</h4>
+        <pre>Lorem, ipsum dolor sit amet consectetur adipisicing
+             elit. Voluptate odit laborum magnam. Rem odio quae,
+              repudiandae harum aspernatur cum et tempora expedita
+               accusamus quasi, qui fuga voluptatibus, exercitationem
+                debitis perferendis?</pre>
+
+    </body>
+</html>
+to make comments we use: angle brackets <!-- this is a comment -->
+<!-- doctype says that the document is an html document
+
+html tags will represent the root element of html page
+
+head tags will contain information about the webpage 
+title is the title of the page 
+
+body element contains visible content of your webpage
+h1 defines a large heading 
+p represents paragraph text
+
+if we have two paragraph defining texts; they are automatically 
+    separated by line breaks 
+
+if we want extra line breaks we can use <br> tag which is a 
+    self closing tag.
+hr will add a horizontal line across the page.  
+
+if we add any new lines and any line breaks over here in text it isnt
+    visible on website.
+but if we want it to follow the format we are typing in over here we can 
+    use pre tags instead of p tags.
+-->
+
+<!-- 
+What is a hyperlink? 
+it is a digital reference to data that a user can follow by clicking or tapping 
+a button or a link
+
+To create a hyperlink:
+we need <a> </a> tags 
+1. href attribute that is a name value pair that modifies the 
+behaviour of an element 
+2. target is another attribute that will:
+if we set the target to "_blank" then the link will open in a new tab
+3. title is another attribute that will set what is visible when the mouse
+hovers over the link before clicking it
+
+we can have absolute urls and relative urls. 
+let us link two html pages together using another hyperlink
+we can do that by using a tags and passing the name of the file if we are in 
+the same project. eg: href = "lyrics.html"
+
+how to add images to our webpage:
+we use an img tag and put the link of the image in src; we can set the height=""
+and width="" 
+
+how to add audio files: 
+we need audio tags
+we can use the attributes: controls autoplay muted loop
+
+how to include a video that has mp4 format: check vid.html
+
+how to apply a favicon to your website? navigate to favicon.html
+
+--> 
