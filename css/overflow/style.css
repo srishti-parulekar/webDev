@@ -1,0 +1,33 @@
+div{
+    border: 2px solid;
+    height: 50px;
+    overflow: auto;
+    /*default is:
+    overflow: visible; 
+    this means that whatever text wants to overflow should be 
+    allowed to overflow*/
+
+    /*overflow: hidden;
+    this hides the elements that are overflowing outside
+    the box but still lets us interact with it incase we try to 
+    copy all the text we can still get the whole text*/
+
+
+    /*overflow: clip;
+    overflow-clip-margin: 13px;
+    overflow clip is similar to overflow hidden except it is used with
+    overflow-clip-margin in which the value states by how much 
+    we will let the text overflow past the margin.*/
+
+    /*overflow:scroll;
+    this introduces a scroll bar at the right side of the div which 
+    lets us scroll to see the entire text.
+    if the text is too small to need a scrollability 
+    then the scroll bas is still visible just disabled.*/
+
+    /*overflow:auto;
+    this also includes a scrollbar but it is only visible when it is needed
+    for example if the text is too small then the scroll bar wont be visible
+    but if it is big enough then the scroll bar helps scroll to see the 
+    full text*/
+}

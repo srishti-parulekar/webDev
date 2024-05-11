@@ -1,0 +1,48 @@
+/*display can be set to the following:
+1. display:block;
+this is the default of block elements and it will make the inline
+elements behave like block elements.
+->height and width are useful. 
+
+2.display: inline;
+this will make the block elements behave like inline elements
+->height and width have no use
+
+3. display: inline-block;
+this will make the block elements and the inline elements behave like 
+inline-block elements such that the height has effect but other than that
+the elements are still inline; other components can be fit in the same line.
+with inline blocks we can use visibility attributes as well
+visibility works similar to display
+if we set it to be hidden: then the element is hidden but its still taking
+up space like its invisible 
+
+
+4. display:none;
+this will erase that element
+-> it will not be visible on the page. 
+-> unlike visibility:hidden the space itself is gone; the element is gone. 
+
+
+*/
+div{
+    background-color: rgb(182, 51, 51);
+    width:100px;
+    height:100px;
+    /*setting the display of div element to block
+    doesnt do anything since its already a block.*/
+    display:inline-block;
+    visibility: hidden;
+}
+span{
+    background-color: blue;
+    
+    display:inline-block;
+    width:100px;
+    height:100px;
+    
+}
+/*we can change the behaviour of these elements by
+using the display property:
+*/
+

@@ -1,0 +1,48 @@
+/*if we want to apply
+styling to all the elements on the page
+we can do so using * */
+
+*{
+    /*since floating wasnt possible because the width wasnt naturally
+    taking into consideration the border we can make it do that by setting:*/
+
+    box-sizing: border-box;
+
+}
+
+.container{
+    /*if we want the container to take up the entire space of the webpage
+    we can do so by setting height to 100vh*/
+    height:100vh;
+    background-color: blanchedalmond;
+}
+
+.box{
+    border: 2px solid;
+    height: auto;
+    background-color:azure;
+    /*height auto is default*/
+    width: 50%;
+    /*we can set the height and width in percentages too*/
+    float:left;
+    /*wont let the boxes float since there isnt enough space for 
+    both to fit accounting for 50% width of both and the border being
+    2px*/
+
+    /*to make sure the text in our boxes isnt sticking to the 
+    borders we need to apply padding:*/
+
+    padding: 25px;
+
+    /*
+    if we want our text to be in the center of our element we can do that
+    using:*/
+    text-align:center;
+    /* we can set min-width max-width min-height max-height using percentages*/
+
+    min-width:25%;
+    min-height:50%;
+}
+
+/*if we want to use up all the space of our webpage we can do so by using
+a container*/

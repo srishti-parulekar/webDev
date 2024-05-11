@@ -1,0 +1,44 @@
+#box1{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    position:relative;
+    top: 100px;
+    left: 100px;
+    /*positioned relative to where it normally should be*/
+
+    /*also since the nested div is positioned absolutely wherever this 
+    box moves the box3 stays on its position on box1 as usual*/
+    
+}
+#box2{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    position: fixed;
+    /*this element is fixed to be at the position it is at
+    relative to our screen. even if we scroll it stays at that position
+    on our screen*/
+    right: 0px;
+    bottom:0px;
+}
+
+#box3{
+    width:50px;
+    height:50px;
+    top:50px;
+    left:50px;
+    background-color: red;
+    position:absolute;
+}
+
+#box4{
+    width:70px;
+    height:70px;
+    
+    top:0px;
+    background-color: red;
+    position:sticky;
+    /*fixed till the scrolling catches up to it then its stuck 
+    to the top*/
+}

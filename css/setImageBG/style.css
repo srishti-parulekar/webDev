@@ -1,0 +1,16 @@
+body{
+    background-image: url(../images/nyc.jpg);
+    /*if image size is small then it repeats itself
+    to fill the viewport 
+    this can be changed by:*/
+    background-repeat: no-repeat;
+    /*now we can center our image:*/
+    background-position: center;
+    /*since we do not want our image to move
+    when the user scrolls: */
+    background-attachment: fixed;
+    /*now we need this image to take up the entire space 
+    of the background that is fill the biewport*/
+    background-size: cover;
+
+}

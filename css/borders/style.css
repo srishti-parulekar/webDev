@@ -1,0 +1,17 @@
+h1{
+    /* border-style:solid;
+    border-width:2px;
+    border-color:hsl(199, 67%, 52%);
+    can be written in shorthand:
+    */
+    border: 3px solid rgb(26, 115, 232);
+    border-radius:20px;
+}
+p{
+    border-bottom: 3px solid rgb(107, 21, 21);
+    border-top: 3px solid rgb(209, 209, 9);
+    border-left: 3px dotted rgb(85, 85, 164);
+    border-right: 3px dashed rgb(59, 111, 59);
+
+    border-radius:20px;
+}

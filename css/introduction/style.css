@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+h1 {
+    color:white;
+}
+/* to select a paragraph by if we use the hashtag before p1*/
+/* #p1{
+    color: pink;
+}
+#p2{
+    color: red;
+}
+#p3{
+    color: lightblue;
+}
+#p4{
+    color: lightgreen;
+} */
+
+/* to apply any formatting a class alone: 
+we use a period and the class name*/
+
+.odd{
+    color: yellowgreen;
+}
+.even{
+    color: blue;
+}

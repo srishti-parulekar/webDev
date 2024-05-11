@@ -1,0 +1,45 @@
+/* here we are demonstrating the different 
+pseudoclasses: link, hover, active, visited etc. */
+a:link{
+    color:rgb(20, 171, 231);
+}
+a:hover{
+    color:rgb(116, 187, 215);
+    font-size: 1.1em;
+}
+/*
+active is activated when we click on the link and 
+dont let it go*/
+a:active{
+    color:rgb(27, 84, 199);
+    font-size: 1.1em;
+}
+/*when we come back to original page after visiting the 
+link the default color is purple. we can changed that
+using the visited pseudoclass*/
+a:visited{
+    color:blueviolet;
+}
+li:hover{
+    color:blanchedalmond;
+}
+li:not(:hover){
+    color:blueviolet;
+}
+
+/*nth child pseudo class helps us choose selective
+list items; the argument can be even, odd, 2n, 3n, 4n, etc*/
+
+li:nth-child(3n+1){
+    background-color: azure;
+}
+/*i want the paragraph element of my div to be visible only when i 
+hover over the div*/
+#greeting p{
+    background-color: aliceblue;
+    padding:10px;
+    display:none;
+}
+#greeting:hover p{
+    display:block;
+}

@@ -1,0 +1,17 @@
+body{
+    border: 3px solid;
+    /*if second image is bleeding out of the border we can 
+    fix that by setting the display to flow-root 
+    */
+    display:flow-root;
+
+}
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}

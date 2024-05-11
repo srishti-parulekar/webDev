@@ -1,0 +1,21 @@
+/* we can set colours using the following ways:
+1. by name: */
+body {
+    background-color:slategrey;
+}
+#p1{
+    color: tomato;
+}
+/* we can also use rgb values here: */
+#p2{
+    color:rgb(102,222,255)
+}
+/* we can also use hexadecimal values here:*/
+#p3{
+    color:#59ff5f
+}
+/* we can also use hsl values:
+hue saturation lightnes*/
+#p4{
+    color:hsl(350, 100%, 88%);
+}

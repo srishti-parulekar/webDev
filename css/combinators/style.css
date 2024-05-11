@@ -1,0 +1,37 @@
+#container{
+    border: 2px solid;
+}
+
+/*using the descendant combinator which 
+is an empty space first:*/
+#container p{
+    background-color: yellow;
+}
+
+/* child paragraph of a div is the paragraph inside
+that div. the paragraph that is a part of a nested div
+inside that div doesnt count as its child. */
+
+/* all children are descendants; but all descendants
+arent children since they may be grandchildren. */
+
+#container > p{
+    color: grey;
+}
+
+/*general siblings of a div are usually the paragraphs 
+that are outside the div
+but if those outside paragraphs were inside a div of their
+own then they would no longer be general siblings to container
+they would more like be nieces? nephews? */
+
+#container ~ p{
+    color:blueviolet;
+}
+
+/*adjacent sibling is for the next direct sibling. 
+in this case the p4 is the next direct sibling for container.
+*/
+#container + p{
+    color:brown;
+}

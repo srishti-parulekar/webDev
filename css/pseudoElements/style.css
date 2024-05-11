@@ -1,0 +1,29 @@
+h1::first-letter{
+    font-size: 2em;
+    font-size: italic;
+}
+p::first-line{
+    background-color: yellow;
+}
+
+/* selection pseudo elements*/
+/*when we select anything with our mouse 
+how that text is visible can be formatted*/
+p::selection{
+    color: yellow;
+    background-color: green;
+}
+
+#apple::after{
+    content: "🍎";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
+}
+#fruit list::marker{
+    content: "✅";
+    font-size:1.2em;
+}

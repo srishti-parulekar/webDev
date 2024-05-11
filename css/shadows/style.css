@@ -1,0 +1,15 @@
+h1{
+    text-shadow:2px 3px 3px hsl(0, 75%, 30%),2px 3px 3px hsla(134, 90%, 54%, 0.35);
+    /*first value is for horizontal offset
+    second is for vertical offset
+    the third one is for blurring 
+    fourth is for the colour of the shadow
+    to add more than one shadow to the same text: 
+    we can give the same variables again after a comma*/
+}
+#box1{
+    width:100px;
+    height:100px;
+    background-color:aqua;
+    box-shadow: 3px 3px 5px;
+}
